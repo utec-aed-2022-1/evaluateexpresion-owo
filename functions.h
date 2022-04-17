@@ -63,7 +63,6 @@ bool decompose(Stack<T>& num, Stack<U>& sym, string input){
 
         if(input[i] != ' '){
             if(issymbol(input[i])){
-                //sym.push(input[i]);
                 if(input[i] == ')' || input[i] == '('){
                     if(input[i] == '(')
                         sym.push(input[i]);
@@ -100,6 +99,9 @@ bool decompose(Stack<T>& num, Stack<U>& sym, string input){
 
     cout<<num.name()<<endl;
     cout<<sym.name()<<endl;
+
+    if(!sym.is_empty())
+        return true;
 
     return false;
 }
