@@ -1,22 +1,42 @@
-//
-// Created by Mauricio on 15/04/2022.
-//
-#include "list.h"
-#ifndef EVALUATEEXPRESION_OWO_STACK_H
-#define EVALUATEEXPRESION_OWO_STACK_H
+#ifndef STACK_H
+#define STACK_H
 
-template <typename T>
-class Stack : public ForwardList<T>{
-public:
-    Stack():ForwardList<T>(){};
+#include <iostream>
+#include "forward.h"
 
-    void push(T data){
-        ForwardList<T>::push_front(data);
-    }
+using namespace std;
 
-    T pop(){
-        return ForwardList<T>::pop_front();
-    }
+template<typename T>
+struct StackList : public ForwardList<T> {
+  StackList() : ForwardList<T>() {}
+  ~StackList() {}
+
+  void push(T);
+  T pop();
+  T top();
+  void display();
 };
 
-#endif //EVALUATEEXPRESION_OWO_STACK_H
+template<typename T>
+void StackList<T>::push(T data) {
+  ForwardList<T>::push_back(data);
+}
+
+
+template<typename T>
+T StackList<T>::pop() {
+  return ForwardList<T>::pop_back(); 
+}
+
+
+template<typename T>
+T StackList<T>::top() {
+  return ForwardList<T>::front();
+}
+
+
+template<typename T>
+void StackList<T>::display() {
+  ForwardList<T>::display();
+}
+#endif
