@@ -2,8 +2,6 @@
 #include "solution.h"
 #include "tester.h"
 
-using namespace std;
-
 
 int main()
 {

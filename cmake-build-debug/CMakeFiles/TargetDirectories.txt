@@ -1,0 +1,3 @@
+C:/Users/Mauricio/Documents/GitHub/evaluateexpresion-owo/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/Mauricio/Documents/GitHub/evaluateexpresion-owo/cmake-build-debug/CMakeFiles/evaluateexpresion_owo.dir
+C:/Users/Mauricio/Documents/GitHub/evaluateexpresion-owo/cmake-build-debug/CMakeFiles/edit_cache.dir
